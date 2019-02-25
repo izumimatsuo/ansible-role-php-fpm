@@ -8,4 +8,4 @@ CentOS 7 に php-fpm を構築する ansible role です。
 
 項目名           |デフォルト値|説明
 -----------------|------------|-------------------------------------
-php_fpm_www      |apache      |連携させる Web サーバ（apache|nginx）
+php_fpm_www      |apache      |連携させる Web サーバ（apache/nginx）
