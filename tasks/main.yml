@@ -1,0 +1,22 @@
+---
+- name: install php and php-fpm package
+  yum:
+    name:
+      - php
+      - php-fpm
+  tags: php-fpm
+
+- name: copy php-fpm conf
+  template:
+    src: www.conf.j2
+    dest: /etc/php-fpm.d/www.conf
+    mode: 0644
+  notify: restart php-fpm service
+  tags: php-fpm
+
+- name: start php-fpm service
+  service:
+    name: php-fpm
+    state: started
+    enabled: yes
+  tags: php-fpm

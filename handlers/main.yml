@@ -1,0 +1,6 @@
+---
+- name: restart php-fpm service
+  service:
+    name: php-fpm
+    state: restarted
+  tags: php-fpm
