@@ -1,4 +1,4 @@
-# ansible-role-php-fpm
+# ansible-role-php-fpm [![Build Status](https://travis-ci.org/izumimatsuo/ansible-role-php-fpm.svg?branch=master)](https://travis-ci.org/izumimatsuo/ansible-role-php-fpm)m
 
 CentOS 7 に php-fpm を構築する ansible role です。
 
